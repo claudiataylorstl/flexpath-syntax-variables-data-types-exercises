@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_01();
+  exercise_07();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -31,7 +31,7 @@ function exercise_01() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log("Hello, World!");
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -49,8 +49,13 @@ function exercise_02() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let myAge = 37;
 
+  const myName = "Claudia";
+
+  console.log(myName, myAge);
+  
+  
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -138,7 +143,23 @@ function exercise_06() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let message = "I Have To pOOOp";
+  
+  console.log(message);
+  
+  let upper = message.toUpperCase();
+
+  console.log(upper);
+
+  let lower = message.toLowerCase();
+
+  console.log(lower);
+
+  let length = message.length;
+
+  console.log(length);
+
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -165,7 +186,21 @@ function exercise_07() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let name = 'Claudia';
+
+  let greeting = `Hello, ${name}! Welcome to Javascript!`;
+
+  console.log(greeting);
+
+
+
+
+
+
+
+
+
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
