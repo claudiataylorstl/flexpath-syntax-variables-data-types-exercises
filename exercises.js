@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_07();
+  exercise_10();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -81,7 +81,17 @@ function exercise_03() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+
+  let sum = num1 + num2;
+
+  let subtract = num1 - num2;
+
+  let multiply = num1 * num2;
+
+  let divide = num1 / num2;
+
+
+  console.log(sum, subtract, multiply, divide);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -100,7 +110,17 @@ function exercise_04() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let x = 5
+
+  console.log(typeof(x));
+
+  x = "word";
+
+  console.log(typeof(x));
+
+  x = false;
+
+  console.log(typeof(x));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -118,7 +138,14 @@ function exercise_05() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let isAvailable = true;
+
+  console.log(isAvailable);
+
+  isAvailable = !true;
+
+  console.log(isAvailable);
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -143,7 +170,7 @@ function exercise_06() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  let message = "I Have To pOOOp";
+  let message = "Happy 4th Of July!";
   
   console.log(message);
   
@@ -221,7 +248,25 @@ function exercise_08() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let money;
+
+  let dollars = null;
+
+
+  console.log(money);
+
+  console.log(dollars);
+
+
+  
+
+
+
+
+
+
+
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -241,7 +286,15 @@ function exercise_09() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {};
+
+  book.title = "The Inferno";
+
+  book.author = "Dante";
+
+  book.publishedYear = "idk";
+
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -261,7 +314,18 @@ function exercise_10() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {};
+
+  book.title = "The Inferno";
+
+  book.author = "Dante";
+
+  book.publishedYear = "idk";
+
+  console.log(book.title);
+
+  console.log(`Author: ${book["author"]}`);
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
