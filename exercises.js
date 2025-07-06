@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_10();
+  exercise_19();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -347,7 +347,21 @@ function exercise_11() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {};
+
+  book.title = "The Inferno";
+
+  book.author = "Dante";
+
+  book.publishedYear = "idk";
+
+  console.log(book);
+
+  book.publishedYear = "A longtime ago.....";
+
+  book["genre"] = "Classics";
+
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -366,7 +380,19 @@ function exercise_12() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {};
+
+  book.title = "The Inferno";
+
+  book.author = "Dante";
+
+  book.publishedYear = "idk";
+
+  console.log(book);
+
+  delete book.author;
+
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -397,7 +423,11 @@ function exercise_13() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log(original.name);
+
+  copy.name = "bob";
+
+  console.log(original);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -417,7 +447,10 @@ function exercise_14() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let date = new Date();
+
+  console.log(date);
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -439,7 +472,10 @@ function exercise_15() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let date = new Date();
+  console.log(`Full Year: ${date.getFullYear()}`);
+  console.log(`Month : ${date.getMonth() + 1}`);
+  console.log(`Day of month; ${date.getDate()}`);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -464,7 +500,16 @@ function exercise_16() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let birthday = new Date("November 26, 1987");
+
+  const birthday1 = new Date(1987, 10, 26);
+
+  console.log(birthday);
+
+  let birthdayString = birthday1.toDateString();
+
+  console.log(birthdayString);
+  console.log(birthday1);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -491,7 +536,12 @@ function exercise_17() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let currentDate = new Date();
+  let timeDifference = currentDate - pastDate;
+
+  let days = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+
+  console.log(days);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -522,7 +572,13 @@ function exercise_18() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let number1 = "With Plus Operator: " + msgPart1 + " " + msgPart2 + "!";
+
+  console.log(number1);
+
+  let number2 = `With Template Literal: ${msgPart1} ${msgPart2}!`;
+
+  console.log(number2);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -555,7 +611,16 @@ function exercise_19() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log(text.includes("JavaScript"));
 
+  console.log(text.includes("Python"));
+
+  console.log(text.includes("javascript"));
+
+  console.log(text.toLowerCase().includes("javascript"));
+
+
+  // The includes() method is case sensitive.  
+  //  To make the third question return true this solution would work:  console.log(text.toLowerCase().includes("javascript"));
   // CODE IN THE OPEN LINES ABOVE
 }
